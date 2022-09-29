@@ -90,10 +90,16 @@
             <option value="Yearly" selected>Yearly</option>
             <option value="Monthly">Monthly</option>
             <option value="weekly">weekly</option>
+            <option value="quarterly">Quarterly(Every 3 months)</option>
           </select>
+          
           <select name="chart">
             <option value="line" selected>Line</option>
             <option value="scatter">Scatter</option>
+          </select>
+          <select name="values">
+            <option value="Max" selected>Max</option>
+            <option value="Min">Min</option>
           </select>
           <input type="submit" value="Submit" />
         </form>
@@ -101,6 +107,14 @@
 
             <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
         </div>
+        <div id="valueContainer">
+          <div>
+              <p id="datePara"></p>
+          </div>
+          <div>
+              <p id="maxPara"></p>
+          </div>
+      </div>
     </div>
   </body>
 </html>
