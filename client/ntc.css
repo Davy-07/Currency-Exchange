@@ -1,5 +1,49 @@
-#formDiv{
+#formDiv,#valueContainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+#canvasContainer{
+    display: flex;
+    padding: 2vw;
+    height: 69vh;
+    border: 1px solid #8b8ba3;
+    margin: 10px;
+    border-radius: 16px;
+    justify-content: center;
+}
+#dataContainer, #paraContainer{
+    margin: 1.3vw;
+    width: 4vw;
+    border: 1px solid #8b8ba3;
+    border-radius: 11px;
+    padding-right: 5vw;
+    padding-left: 0.9vw;
+}
+select{
+    padding: 6px;
+    margin: 4px;
+    font-size: medium;
+    font-style: italic;
+    border-radius: 6px;
+    background-color: #0680DE;
+    color: white;
+    font-family: cursive;
+    width: 85px;
+}
+.submitButton{
+    width: 137px;
+    padding: 0 !important;
+    color: #4caf50;
+    background-color: white;
+    height: 43px;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: medium;
+    font-style: italic;
+}
+.submitButton:hover{
+    cursor: pointer;
+    background-color: #c4fffd;
+
 }
