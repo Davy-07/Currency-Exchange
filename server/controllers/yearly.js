@@ -1,6 +1,6 @@
 const yearly = require('../models/yearly');
 
-const yearly_exchange = async(req,res)=>{
+const yearly_exchange = async(req,res)=>{ //Code for fetching json related to yearly based exchanges
     const {exchange} = req.query;
     let fields = 'Date'+','+exchange;
     if(exchange)
@@ -12,7 +12,7 @@ const yearly_exchange = async(req,res)=>{
     res.status(200).json({result});
 }
 
-const min_max_yearly_exchange = async(req,res) =>{
+const min_max_yearly_exchange = async(req,res) =>{ //Code for fetching min and max value from given time interval
     const {exchange,sort} = req.query;
     console.log(exchange);
     let fields = 'Date'+','+exchange;

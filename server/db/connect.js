@@ -1,3 +1,5 @@
+
+// Code for database connectivity
 const mongoose = require('mongoose')
 
 const connectDB = (url) => {

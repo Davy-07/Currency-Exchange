@@ -1,9 +1,10 @@
+
 const weekly = require('../models/weekly');
 
 const demo = (req,res) =>{
     res.status(200).json({message:true});
 }
-const weekly_exchange = async(req,res)=>{
+const weekly_exchange = async(req,res)=>{  //Code for fetching json related to we based exchanges
     const {year,exchange} = req.query;
     console.log(exchange);
     let fields = 'Date'+','+exchange;
@@ -23,7 +24,7 @@ const weekly_exchange = async(req,res)=>{
     res.status(200).json({result});
 }
 
-const min_max_weekly_exchange = async(req,res)=>{
+const min_max_weekly_exchange = async(req,res)=>{ //Code for fetching min and max value from given time interval
     const {year,exchange,sort} = req.query;
     console.log(exchange);
     let fields = 'Date'+','+exchange;
@@ -44,7 +45,7 @@ const min_max_weekly_exchange = async(req,res)=>{
     {
         sortList = sort.split(',').join(' ');
     }
-    const result = await weekly.find(query).sort(sortList).limit(1).select(fields);
+    const result =  await weekly.find(query).sort(sortList).limit(1).select(fields);
     res.status(200).json({result});
 }
 

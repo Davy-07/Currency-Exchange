@@ -1,6 +1,6 @@
 const quarterly = require('../models/quarterly');
 
-const quarterly_exchange = async(req,res)=>{
+const quarterly_exchange = async(req,res)=>{ //Code for fetching json related to quarterly based exchanges
     const {year,exchange} = req.query;
     console.log(exchange);
     let fields = 'Date'+','+exchange;
@@ -20,7 +20,7 @@ const quarterly_exchange = async(req,res)=>{
     res.status(200).json({result});
 }
 
-const min_max_quarterly_exchange = async(req,res)=>{
+const min_max_quarterly_exchange = async(req,res)=>{ //Code for fetching min and max value from given time interval
     const {year,exchange,sort} = req.query;
     console.log(exchange);
     let fields = 'Date'+','+exchange;

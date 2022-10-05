@@ -1,8 +1,8 @@
 const monthly = require('../models/monthly');
 
-const monthly_exchange = async(req,res)=>{
+const monthly_exchange = async(req,res)=>{ //Code for fetching json related to monthly based exchanges
     const {year,exchange} = req.query;
-    console.log(exchange);
+    console.log(req.query);
     let fields = 'Date'+','+exchange;
 
     console.log(fields);
@@ -20,7 +20,7 @@ const monthly_exchange = async(req,res)=>{
     res.status(200).json({result});
 }
 
-const min_max_monthly_exchange = async(req,res)=>{
+const min_max_monthly_exchange = async(req,res)=>{ //Code for fetching min and max value from given time interval
     const {year,exchange,sort} = req.query;
     console.log(exchange);
     let fields = 'Date'+','+exchange;
