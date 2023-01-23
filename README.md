@@ -1,6 +1,6 @@
 # MIT-TEAM-4
 
-The team build a website which will help user to anaylsis and compare the exchange rate of two currencies over the time period of 2012 to 2022.The user will have option to select time interval as yearly/Quaterly/Monthly/Weekly over which the graphical will be plotted.The webiste will also display the highest and lowest currience rate in the interval choosen by the user.
+This website was developed to let visitors analyse and compare the exchange rates of various currencies against the US dollar from 2012 until 2022. The user can select an annual, quarterly, monthly, or weekly time interval for the graphics to be plotted over. Additionally, the website will show the highest and lowest current rates for the time period that the user picks.
 
 After clonning the repository you have to go to app.js in Server Folder of the repository and will have to install all the dependencies mentioned in on your machine by running the command
 ```npm i```
