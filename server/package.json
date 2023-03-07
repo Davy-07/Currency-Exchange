@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+
+
 {
   "scripts": {
     "start": "nodemon app.js"
@@ -11,17 +12,4 @@
     "nodemon": "^2.0.20"
   }
 }
-=======
-{
-  "scripts": {
-    "start": "nodemon app.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.2",
-    "express": "^4.18.1",
-    "mongoose": "^6.6.2",
-    "nodemon": "^2.0.20"
-  }
-}
->>>>>>> 5f30cb6da37783b33aaa0e16dfa262f21108dda9
+
