@@ -22,7 +22,7 @@ app.use(notFound);
 app.use(error_handler);
 
 
-const port = process.env.port || 3000;
+const port = process.env.port;
 const start = async()=>{
     try{
         await connectDB(process.env.db_connect);
