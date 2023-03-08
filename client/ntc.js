@@ -5,7 +5,7 @@ window.onload=function(){
     form.onsubmit=async (e)=>{
         e.preventDefault();
         
-        let url=new URL(`http://localhost:3000/api/v1/exchange/${e.target.Type.value}?year=${e.target.YearDropDown.value}&fcurrency=${e.target.Currency1.value}&exchange=${e.target.Currency2.value}`)
+        let url=new URL(`https://calm-gray-goat-wear.cyclic.app/api/v1/exchange/${e.target.Type.value}?year=${e.target.YearDropDown.value}&fcurrency=${e.target.Currency1.value}&exchange=${e.target.Currency2.value}`)
         let curr=e.target.Currency2.value;
         // let url="./devanshu.json"
         //hit url to fetch date from backend 
@@ -39,7 +39,7 @@ window.onload=function(){
         }
         
         //hit url to get maximum/minimum value from database
-        url=new URL(`http://localhost:3000/api/v1/exchange/${e.target.Type.value}/min_max?&year=${e.target.YearDropDown.value}&exchange=${e.target.Currency2.value}&sort=${para}`)
+        url=new URL(`https://calm-gray-goat-wear.cyclic.app/api/v1/exchange/${e.target.Type.value}/min_max?&year=${e.target.YearDropDown.value}&exchange=${e.target.Currency2.value}&sort=${para}`)
         console.log(url)
         fetch(url)
         .then(async (response)=>{
