@@ -1,4 +1,4 @@
-# MIT-TEAM-4
+
 
 This website was developed to let visitors analyse and compare the exchange rates of various currencies against the US dollar from 2012 until 2022. The user can select an annual, quarterly, monthly, or weekly time interval for the graphics to be plotted over. Additionally, the website will show the highest and lowest current rates for the time period that the user picks.
 
